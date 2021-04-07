@@ -1,6 +1,5 @@
 package test.java.rocks.zipcode;
 import static org.junit.jupiter.api.Assertions.*;
-import main.java.rocks.zipcode.Guts;
 import main.java.rocks.zipcode.PikeMatcher;
 
 import org.junit.After;
@@ -106,47 +105,56 @@ class PikeMatcherTest {
     public void tearDown() throws Exception {
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     public void testmatch1() {
+        foo = new PikeMatcher();
         assertEquals(true, foo.match("abc", "abc"));
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     public void testmatch2() {
+        foo = new PikeMatcher();
         assertEquals(true, foo.match("^a", "abc"));
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     public void testmatch3() {
+        foo = new PikeMatcher();
         assertEquals(false, foo.match("^b", "abc"));
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     public void testmatch4() {
+        foo = new PikeMatcher();
         assertEquals(true, foo.match("abc", "aaabcbbcc"));
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     public void testmatch5() {
+        foo = new PikeMatcher();
         assertEquals(true, foo.match("c$", "aaabcbbcc"));
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     public void testmatch6() {
+        foo = new PikeMatcher();
         assertEquals(true, foo.match(".*cc", "aaabcbbcc"));
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     public void testmatch7() {
+        foo = new PikeMatcher();
         assertEquals(false, foo.match("jkl", "aaabcbbcc"));
     }
-    @Test
+    @org.junit.jupiter.api.Test
     public void testmatch8() {
+        foo = new PikeMatcher();
         assertEquals(true, foo.match("cb.", "aaabcbbcc"));
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     public void testmatch9() {
+        foo = new PikeMatcher();
         assertEquals(false, foo.match("cb.", "aaabcabcc"));
     }
 
