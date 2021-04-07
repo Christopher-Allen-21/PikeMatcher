@@ -1,8 +1,11 @@
+package test.java.rocks.zipcode;
+import static org.junit.jupiter.api.Assertions.*;
+import main.java.rocks.zipcode.Guts;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
 
 public class GutsTest {
     private Guts foo;
